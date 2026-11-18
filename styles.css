@@ -1,3 +1,6 @@
+/* Add your CSS to this file */
+
+/* ---------- Push 3: Globals ---------- */
 *,
 *::before,
 *::after {
@@ -31,7 +34,7 @@ ul {
     padding: 0 16px;
 }
 
-/*Push 3: Header */
+/* ---------- Push 3: Header ---------- */
 header {
     background-color: white;
     padding: 20px 0;
@@ -63,7 +66,7 @@ header nav a:hover {
     color: #5A67D8;
 }
 
-/*Push 3: Hero overview*/
+/* ---------- Push 3: Hero overview ---------- */
 .overview-hero {
     background-color: #E2E8F0;
     padding: 60px 0;
@@ -89,7 +92,7 @@ header nav a:hover {
     margin-bottom: 0;
 }
 
-/*Push 4: Learn About*/
+/* ---------- Push 4: Learn About ---------- */
 .learn-about {
     padding: 60px 0;
 }
@@ -135,7 +138,7 @@ header nav a:hover {
     font-size: 16px;
 }
 
-/* COVID-19 Testing */
+/* ---------- Push 4: COVID-19 Testing ---------- */
 .testing {
     background-color: #4A5568;
     color: white;
@@ -173,4 +176,146 @@ header nav a:hover {
     padding: 12px 32px;
     border-radius: 5px;
     white-space: nowrap;
+}
+
+/* ---------- Push 5: Recent Stories ---------- */
+.stories {
+    padding: 60px 0;
+}
+
+.stories h2 {
+    color: #5A67D8;
+    font-size: 24px;
+    margin: 0 0 32px;
+}
+
+.stories article {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+.stories article:last-child {
+    margin-bottom: 0;
+}
+
+.stories article img {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.article-body h3 {
+    font-size: 18px;
+    margin: 0 0 8px;
+}
+
+.article-body p {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+.article-body a {
+    color: #5A67D8;
+    text-decoration: none;
+}
+
+.article-body a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Push 5: Newsletter ---------- */
+.newsletter {
+    background-color: #48BB78;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.newsletter h3 {
+    margin: 0 0 8px;
+    font-size: 21px;
+}
+
+.newsletter p {
+    margin: 0 auto 24px;
+    max-width: 480px;
+    font-size: 16px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.newsletter input[type="email"] {
+    width: 300px;
+    max-width: 100%;
+    padding: 12px 16px;
+    border: none;
+    font-size: 16px;
+}
+
+.newsletter .btn {
+    background-color: #5A67D8;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.newsletter .message {
+    margin-top: 16px;
+    min-height: 1.5em;
+}
+
+/* ---------- Push 5: Footer ---------- */
+footer {
+    background-color: #4A5568;
+    color: white;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* ---------- Push 5: Responsive polish ---------- */
+@media (max-width: 768px) {
+    header .container,
+    .overview-hero .container,
+    .testing .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .container {
+        gap: 12px;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .stories article {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
 }
